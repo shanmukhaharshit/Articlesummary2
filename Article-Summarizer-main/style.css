@@ -1,0 +1,180 @@
+/* Resetting Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for the Body */
+body {
+  font-family: "Roboto", sans-serif;
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #888 #f5f5f5; /* scroll thumb and track */
+  background: linear-gradient(to bottom right, #eef2f3, #d2e3fc);
+  color: #333;
+}
+
+/* Roboto Font Variants */
+.roboto-thin {
+  font-weight: 100;
+}
+
+.roboto-light {
+  font-weight: 300;
+}
+
+.roboto-regular {
+  font-weight: 400;
+}
+
+.roboto-medium {
+  font-weight: 500;
+}
+
+.roboto-bold {
+  font-weight: 700;
+}
+
+.roboto-black {
+  font-weight: 900;
+}
+
+.roboto-thin-italic {
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Container Styling */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #eef2f3;
+}
+
+/* Heading Styling */
+.heading {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+  transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+.heading:hover {
+  transform: scale(1.1);
+  color: #007acc;
+}
+
+/* Article Summarizer Box */
+.summarizer-article {
+  height: 250px;
+  width: 500px;
+  border: 1px solid #ccc;
+  overflow-x: hidden;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summarizer-article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #007acc;
+}
+
+/* Summary Text */
+.summary {
+  font-size: 1rem;
+  text-align: justify;
+  color: #555;
+}
+
+/* Input Box Styling */
+#url {
+  height: 35px;
+  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#url:hover {
+  transform: scale(1.02);
+  border-color: #007acc;
+}
+
+/* Button Styling */
+.btn {
+  height: 45px;
+  width: 130px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background-color: #005b99;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .summarizer-article,
+  #url {
+    width: 90%;
+  }
+
+  .btn {
+    width: 100px;
+  }
+}
